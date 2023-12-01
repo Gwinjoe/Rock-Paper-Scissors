@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/x-icon" width="20x20px" href="/images/scissors.png">
+	<link rel="icon" type="image/x-icon" width="20x20px" href="images/scissors.png">
 	<title>Rock-paper-scissors Js Game || By Gwin</title>
 	
 	<style>
@@ -78,9 +78,9 @@
 	<main>
 			<p class="title">Rock-paper-scissors Js Game |<span class="creator">| By Gwin</span></p>
 			<div class="buttons-container">
-				<button onclick="gameMove('rock')" class="move-button"><img src="/images/rock.png" class="move-icon"></button>
-				<button onclick="gameMove('paper')" class="move-button"><img src="/images/paper.png" class="move-icon"></button>
-				<button onclick="gameMove('scissors')" class="move-button"><img src="/images/scissors.png" class="move-icon"></button>
+				<button onclick="gameMove('rock')" class="move-button"><img src="images/rock.png" class="move-icon"></button>
+				<button onclick="gameMove('paper')" class="move-button"><img src="images/paper.png" class="move-icon"></button>
+				<button onclick="gameMove('scissors')" class="move-button"><img src="images/scissors.png" class="move-icon"></button>
 				
 			</div>
 			
@@ -151,8 +151,8 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 		localStorage.setItem('score', JSON.stringify(score));
 		document.querySelector('.js-result').innerHTML = result;
 		document.querySelector('.js-move').innerHTML =  `You
-      <img src="/images/${gameItem}.png" class="move-icon">
-      <img src="/images/${computerMove}.png" class="move-icon">
+      <img src="images/${gameItem}.png" class="move-icon">
+      <img src="images/${computerMove}.png" class="move-icon">
       Computer
     `;
 		updateScore();
